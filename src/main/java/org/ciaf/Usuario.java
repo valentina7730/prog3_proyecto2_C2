@@ -1,26 +1,44 @@
 package org.ciaf;
 
-import java.util.HashMap;
-import java.util.Scanner;
-
 public class Usuario {
+    private String nombreDeUsuario;
+    private String contraseña;
+    private Rol rol;
 
-    private HashMap<String, String> administrador;
-    private HashMap<String, String> empleado;
-    private HashMap<String, String> vendedor;
-    private Scanner scanner;
+    // Constructor
+    public Usuario(String nombreDeUsuario, String contraseña, Rol rol) {
+        this.nombreDeUsuario = nombreDeUsuario;
+        this.contraseña = contraseña;
+        this.rol = rol;
+    }
 
+    // Getters y setters
+    public String getNombreDeUsuario() {
+        return nombreDeUsuario;
+    }
 
+    public void setNombreDeUsuario(String nombreDeUsuario) {
+        this.nombreDeUsuario = nombreDeUsuario;
+    }
 
-    public Usuario() {
-        administrador = new HashMap<>();
-        empleado = new HashMap<>();
-        vendedor = new HashMap<>();
+    public String getContraseña() {
+        return contraseña;
+    }
 
-        administrador.put("admin", "admin123");
-        empleado.put("almace", "almace123");
-        vendedor.put("cont", "cont123");
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
 
-        scanner = new Scanner(System.in);
+    public Rol getRol() {
+        return rol;
+    }
+
+    public void setRol(Rol rol) {
+        this.rol = rol;
+    }
+
+    // Método para verificar la contraseña
+    public boolean verificarContraseña(String contraseña) {
+        return this.contraseña.equals(contraseña);
     }
 }
