@@ -3,7 +3,7 @@ package org.ciaf;
 import java.util.List;
 
 public class Informe {
-    // Método para generar informe de ventas
+
     public void generarInformeDeVentas(List<Venta> ventas) {
         System.out.println("Informe de Ventas:");
         System.out.println("------------------");
@@ -19,7 +19,7 @@ public class Informe {
         }
     }
 
-    // Método para generar informe de inventario
+
     public void generarInformeDeInventario(List<Producto> productos) {
         System.out.println("Informe de Inventario:");
         System.out.println("------------------");

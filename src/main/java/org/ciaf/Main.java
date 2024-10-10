@@ -24,7 +24,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    // Agregar producto
+
                     System.out.println("Ingrese el nombre del producto:");
                     String nombre = scanner.next();
                     System.out.println("Ingrese la descripción del producto:");
@@ -39,7 +39,7 @@ public class Main {
 
                     break;
                 case 2:
-                    // Realizar venta
+
                     System.out.println("Ingrese el ID del producto a vender:");
                     int idProducto = scanner.nextInt();
                     System.out.println("Ingrese la cantidad a vender:");
@@ -63,15 +63,15 @@ public class Main {
 
                     break;
                 case 3:
-                    // Generar informe de ventas
+
                     informe.generarInformeDeVentas(ventas);
                     break;
                 case 4:
-                    // Generar informe de inventario
+
                     informe.generarInformeDeInventario(productos);
                     break;
                 case 5:
-                    // Salir
+
                     System.out.println("Adiós!");
                     return;
             }

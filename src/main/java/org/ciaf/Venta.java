@@ -10,7 +10,7 @@ public class Venta {
     private double totalDeLaVenta;
     private LocalDateTime fechaYHora;
 
-    // Constructor
+
     public Venta(int idDeVenta) {
         this.idDeVenta = idDeVenta;
         this.productosVendidos = new ArrayList<>();
@@ -18,7 +18,7 @@ public class Venta {
         this.fechaYHora = LocalDateTime.now();
     }
 
-    // Getters y setters
+
     public int getIdDeVenta() {
         return idDeVenta;
     }
@@ -51,13 +51,13 @@ public class Venta {
         this.fechaYHora = fechaYHora;
     }
 
-    // Método para agregar productos a la venta
+
     public void agregarProducto(Producto producto) {
         this.productosVendidos.add(producto);
         this.totalDeLaVenta += producto.getPrecio();
     }
 
-    // Método para calcular el total de la venta
+
     public double calcularTotalDeLaVenta() {
         return this.totalDeLaVenta;
     }

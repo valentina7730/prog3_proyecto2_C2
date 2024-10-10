@@ -7,7 +7,7 @@ public class Producto {
     private double precio;
     private int cantidadEnStock;
 
-    // Constructor
+
     public Producto(int id, String nombre, String descripcion, double precio, int cantidadEnStock) {
         this.id = id;
         this.nombre = nombre;
@@ -16,7 +16,7 @@ public class Producto {
         this.cantidadEnStock = cantidadEnStock;
     }
 
-    // Getters y setters
+
     public int getId() {
         return id;
     }
@@ -58,7 +58,7 @@ public class Producto {
     }
 
 
-    // Método para actualizar la cantidad en stock
+
     public void actualizarCantidadEnStock(int cantidad) {
         this.cantidadEnStock += cantidad;
     }

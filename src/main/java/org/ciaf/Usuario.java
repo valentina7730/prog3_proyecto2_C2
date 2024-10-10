@@ -5,14 +5,14 @@ public class Usuario {
     private String contraseña;
     private Rol rol;
 
-    // Constructor
+
     public Usuario(String nombreDeUsuario, String contraseña, Rol rol) {
         this.nombreDeUsuario = nombreDeUsuario;
         this.contraseña = contraseña;
         this.rol = rol;
     }
 
-    // Getters y setters
+
     public String getNombreDeUsuario() {
         return nombreDeUsuario;
     }
@@ -37,7 +37,7 @@ public class Usuario {
         this.rol = rol;
     }
 
-    // Método para verificar la contraseña
+
     public boolean verificarContraseña(String contraseña) {
         return this.contraseña.equals(contraseña);
     }
